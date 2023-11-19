@@ -1,13 +1,25 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
   .main {
-    display: flex;
+    display: none;
+
   }
 
+  .start-btn {
+    padding: 3px 5px;
+
+  }
+
+  .landing-page{
+    background-color: azure;
+    width: 100%;
+    height: 100vh;
+
+  }
   .tools-container {
     width: 10vw;
     height: 100vh;
@@ -176,6 +188,272 @@
   
 
   .chest {
+    background-image: url('/assets/Chest.webp');
+    background-color: aliceblue;
+    width: 5rem;;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .game-btn {
+    padding: 10px 15px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    margin-top: 10px; 
+    transition: background-color 0.3s; 
+}
+
+.game-btn:hover {
+    background-color: #45a049; 
+}
+
+.landing-page {
+    background-image: url(/assets/minecraft.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 2.5rem; 
+    color: #333; 
+    margin-bottom: 20px; 
+}
+
+.start-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 1.2rem; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.start-btn:hover {
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+} */
+/* .............. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: none;
+}
+
+.landing-page {
+    background-image: url('/assets/minecraft.jpg'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.landing-page h1 {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-btn:hover {
+    background-color: #367c39;
+    transform: scale(1.1);
+}
+
+.tools-container {
+    width: 10vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 10px;
+}
+
+.tool, .chest {
+    border: 1px solid #ccc;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.tool:hover, .chest:hover {
+    transform: scale(1.1);
+}
+
+.game-container {
+    width: 90vw;
+    height: 100vh;
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+.cell {
+    width: calc(100% / 30);
+    height: calc(100vh / 20);
+    border: 1px solid #aaa;
+    background-color: #d4d4d4;
+}
+
+.blank-cell {
+    background-color: rgb(red, green, blue);
+}
+
+.soil {
+    background-image: url('/assets/soil.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .grass {
+    background-image: url('/assets/grass.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .rock {
+    background-image: url('/assets/rock.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .wood {
+    background-image: url('/assets/wood.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .grass-menu {
+    background-image: url('/assets/grass.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .rock-menu {
+    background-image: url('/assets/rock.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .wood-menu {
+    background-image: url('/assets/wood.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .soil-menu{
+    background-image: url('/assets/soil.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+
+  #shovel {
+    background-image: url('/assets/shavel-website.jpg');
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #pickaxe {
+    background-image: url('/assets/pickaxw.jpg');
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #axe {
+    background-image: url('/assets/axe.jpg');
+    background-color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+
+.game-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.game-btn:hover {
+    background-color: #0056b3;
+}
+
+.chest {
     background-image: url('/assets/Chest.webp');
     background-color: aliceblue;
     width: 5rem;;
